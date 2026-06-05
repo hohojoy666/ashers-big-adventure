@@ -9,7 +9,8 @@ Asher's Big Adventure is a baby-themed Roblox obby starring a baby named Asher. 
 - Active Studio place: `Asher's Big Adventure`.
 - Before changing the place, verify the active Studio instance with `list_roblox_studios` and `set_active_studio` if needed.
 - Use `execute_luau` for world building, instance setup, and one-shot Studio automation.
-- Use `multi_edit` for editing existing script source when targeted script edits are needed.
+- ALWAYS create and edit scripts (Script, LocalScript, ModuleScript) with `multi_edit`. Scripts created via `execute_luau` do NOT persist and are lost on reload.
+- After building, verify with `search_game_tree`, then tell the user to save the place (Ctrl+S) to persist changes to disk.
 - Use `start_stop_play`, `get_console_output`, and `screen_capture` for verification.
 
 ## Core Game Rules

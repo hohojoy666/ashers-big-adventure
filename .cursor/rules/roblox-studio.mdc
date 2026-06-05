@@ -1,0 +1,14 @@
+---
+description: Persistent Roblox Studio MCP workflow and project conventions for Asher's Big Adventure
+alwaysApply: true
+---
+
+# Roblox Studio Project Context
+
+- This project is the Roblox place `Asher's Big Adventure`, built through the `user-Roblox_Studio` MCP.
+- Always verify the active Studio instance before modifying the place.
+- Prefer simple, deterministic Luau and Roblox primitives unless the user asks for more advanced assets.
+- Keep runtime game content in `Workspace/Level` and saleable asset candidates in `Workspace/MarketplaceAssets`.
+- Keep the baby obby rules stable unless the user changes them: simple avatar customizer, checkpoint respawn on obstacles, 10 required coins, Super Milk Bottle finish.
+- MCP can prepare assets but cannot publish, price, moderate, or assemble Avatar Marketplace bundles.
+- Update `DESIGN.md`, `ASSETS.md`, `DECISIONS.md`, and `ReplicatedStorage/ProjectNotes` when project context changes.

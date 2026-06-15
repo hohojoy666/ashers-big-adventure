@@ -6,13 +6,19 @@ Saleable candidates are organized in Roblox Studio under `Workspace/MarketplaceA
 
 ### Milk Bottle
 
-- `MilkBottle/UGC`: `AsherMilkBottleAccessory_UGCReady`, a wearable accessory candidate with a `Handle` and `RightGripAttachment`.
+- `MilkBottle/UGC`: `AsherSuperMilkBottle_Back`, a mesh-based Back accessory candidate with a `Handle` MeshPart, `BodyBackAttachment`, `MeshId = rbxassetid://138465822038126`, and `TextureID = rbxassetid://85992883196584`. A legacy primitive candidate, `AsherMilkBottleAccessory_UGCReady`, is still kept in the same folder.
 - `MilkBottle/CreatorStore`: `AsherMilkBottle_Model_CreatorStoreReady`, a clean model for other creators.
 
 ### Baby Bundle
 
 - `BabyBundle/UGC`: baby body parts plus accessory candidates for pacifier, bonnet, and bib.
 - `BabyBundle/CreatorStore`: `AsherBabyBundle_ModelPack_CreatorStoreReady`, a model pack for developers.
+
+### Classic Clothing (2D)
+
+- `assets/asher_tshirt_512.png`: upload-ready classic T-shirt graphic (square 512x512), a caped "super milk bottle" mascot with an "ASHER" banner on a pastel mint background. Suggested name: "Asher Super Milk Bottle Tee".
+- `assets/asher_tshirt.png`: original generated art (1536x1024) kept as the source.
+- Note: classic T-shirts display on classic/blocky avatar bodies only (front torso). Upload via Creator Hub > Marketplace > T-Shirt; listing costs a Robux fee and requires moderation. The MCP cannot perform the upload.
 
 ## Publishing Checklist
 
@@ -28,4 +34,4 @@ Saleable candidates are organized in Roblox Studio under `Workspace/MarketplaceA
 - The MCP cannot publish, price, moderate, or list assets for sale.
 - Avatar Marketplace publishing requires UGC eligibility and Roblox account requirements.
 - A true avatar bundle is assembled in Creator Dashboard from uploaded body/accessory parts.
-- `generate_mesh` failed during this implementation with: `Model generation should only be called from the server`. Primitive upload-ready assets were created instead.
+- Mesh generation works in Studio edit mode. Do not run asset generation or accessory assembly while the place is in Play mode; Play-mode changes are temporary and generator calls may fail.
